@@ -47,11 +47,12 @@ function Pomodor() {
   };
 
   return (
-    <div>
+    <div className="relative min-h-screen px-4 py-6 bg-transparent">
       
   <Link
-    to="/"><img className =" w-14 ml-96 pb-3 mb-4 sm:ml-[600px] md:ml-[700px] lg:ml-[1100px] xl:ml-[1200px]" src={Todo}></img></Link>
-<h1 className="text-2xl ml-4 font-serif sm:ml-[150px] md:ml-[170px] lg:ml-[420px] xl:ml-[420px] mb-6">"Either you run the day or the day runs you."</h1>
+    to="/"  className="absolute top-0 right-4 sm:top-6 sm:right-8"><img className="w-10 sm:w-12 md:w-14" src={Todo}></img></Link>
+    <div className="flex flex-col items-center justify-center text-center space-y-6">
+<h1 className="text-lg sm:text-xl md:text-2xl font-serif text-gray-800">"Either you run the day or, <br/> the day runs you."</h1>
 
     <div className="flex items-center justify-center 
                     bg-blue-900 rounded-full h-80 w-80
@@ -87,6 +88,7 @@ function Pomodor() {
       </div>
     </div>
   </div>
+</div>
   );
 }
 
